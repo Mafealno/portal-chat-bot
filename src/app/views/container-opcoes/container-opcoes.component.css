@@ -1,6 +1,7 @@
 #container-opcoes {
   height: 300px;
   width: 20vw;
+  min-width: 300px;
   background-color: #137d9a;
   border-radius: 15px;
   margin-bottom: 20px;
