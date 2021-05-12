@@ -1,0 +1,130 @@
+#container-opcoes {
+  height: 300px;
+  width: 20vw;
+  background-color: #137d9a;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titulo-container-opcoes {
+  font-size: 18px;
+  font-weight: lighter;
+  color: white;
+  height: 50px;
+}
+
+.scroll-opcoes {
+  width: calc(80% - 10px);
+  height: calc(80% - 10px);
+  overflow-y: auto;
+  padding: 5px;
+}
+
+.card-opcao {
+  display: grid;
+  grid-template-areas:
+    "icone-opcao titulo-opcao"
+    "icone-opcao desc-opcao";
+  grid-template-rows: 40% 60%;
+  grid-template-columns: 30% 70%;
+  height: 60px;
+  width: calc(100% - 20px);
+  background-color: white;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.card-opcao:hover {
+  background-color: #0c61b0;
+}
+
+.card-opcao:hover * {
+  color: white;
+}
+
+.titulo-opcao {
+  grid-area: titulo-opcao;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.desc-opcao {
+  grid-area: desc-opcao;
+  font-size: 15px;
+}
+
+.icone-opcao {
+  grid-area: icone-opcao;
+  justify-content: center;
+}
+
+.tamanho-icone {
+  font-size: 30px;
+}
+
+.titulo-opcao,
+.desc-opcao,
+.icone-opcao {
+  display: flex;
+  align-items: center;
+  color: #137d9a;
+}
+
+a {
+  text-decoration: none;
+}
+
+@-webkit-keyframes container-opcoes {
+  0% {
+    transform: scale(0);
+    transform-origin: 100% 100%;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: 100% 100%;
+  }
+}
+@-moz-keyframes container-opcoes {
+  0% {
+    transform: scale(0);
+    transform-origin: 100% 100%;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: 100% 100%;
+  }
+}
+@-o-keyframes container-opcoes {
+  0% {
+    transform: scale(0);
+    transform-origin: 100% 100%;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: 100% 100%;
+  }
+}
+@keyframes container-opcoes {
+  0% {
+    transform: scale(0);
+    transform-origin: 100% 100%;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: 100% 100%;
+  }
+}
+
+#container-opcoes {
+  -webkit-animation: container-opcoes 0.3s;
+  -moz-animation: container-opcoes 0.3s;
+  -o-animation: container-opcoes 0.3s;
+  animation: container-opcoes 0.3s;
+}

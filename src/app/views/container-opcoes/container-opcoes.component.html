@@ -1,0 +1,17 @@
+<div id="container-opcoes">
+  <div class="titulo-container-opcoes">Escolha dentre a opção(s) abaixo:</div>
+  <div class="scroll-opcoes">
+    <a
+      href={{opcao.link}}
+      *ngFor="let opcao of opcoes"
+    >
+      <div class="card-opcao">
+        <div class="icone-opcao">
+          <mat-icon class="tamanho-icone">{{ opcao.icone }}</mat-icon>
+        </div>
+        <div class="titulo-opcao">{{ opcao.titulo }}</div>
+        <div class="desc-opcao">{{ opcao.descricao }}</div>
+      </div>
+    </a>
+  </div>
+</div>

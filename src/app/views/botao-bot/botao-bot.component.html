@@ -1,0 +1,7 @@
+<div id="container-fab">
+  <app-container-opcoes *ngIf="valor"></app-container-opcoes>
+  <button mat-fab class="botao" (click)="mudarvalor()">
+    <mat-icon class="efeito-transicao-close" *ngIf="!valor">chat</mat-icon>
+    <mat-icon class="efeito-transicao-chat" *ngIf="valor">close</mat-icon>
+  </button>
+</div>
